@@ -6,6 +6,6 @@ Require: python>=3.8
 from sopel import plugin
 
 
-@plugin.rule('^X$')
+@plugin.rule(r'^[XⓍ]$')
 def x_to_doubt(bot, trigger):
 	bot.action('doubts')
