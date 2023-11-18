@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["sopel_doubts", "sopel_doubts.*"]
+namespaces = false
+
+[project]
+name = "sopel-doubts"
+version = "1.0.0+git.actionsack.com"
+description = "Press X to doubt."
+maintainers = [
+  { name="xnaas", email="me@xnaas.info" },
+]
+authors = [
+  { name="xnaas", email="me@xnaas.info" },
+]
+
+readme = "README.md"
+license = { text="Public Domain" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+	"License :: Public Domain",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+	"Intended Audience :: Other Audience",
+	"Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Communications :: Chat :: Internet Relay Chat",
+	"Private :: Do Not Upload",
+]
+requires-python = "<4,>=3.8"
+dependencies = [
+    "sopel<9,>=7.1",
+]
+
+[project.urls]
+"Homepage" = "https://git.actionsack.com/xnaas/sopel-doubts"
+"Bug Tracker" = "https://git.actionsack.com/xnaas/sopel-doubts/issues"
+
+[project.entry-points."sopel.plugins"]
+doubts = "sopel_doubts.plugin"
