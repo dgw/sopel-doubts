@@ -1,4 +1,8 @@
-# source: https://git.actionsack.com/xnaas/sopel-doubts
+"""Press X to doubt.
+
+Originally released under The Unlicense by xnaas at
+https://git.actionsack.com/xnaas/sopel-doubts
+"""
 from sopel import plugin
 
 @plugin.rule(r"^[XⓍ𝕏]$")
