@@ -14,7 +14,7 @@ readme = { file=["README.md", "NEWS"], content-type="text/markdown" }
 
 [project]
 name = "sopel-doubts"
-version = "1.0.0"
+version = "1.0.1"
 description = "Press X to doubt."
 
 authors = [
