@@ -16,15 +16,16 @@ Triggers on these characters (case-insensitive):
 * Ⓧ
 * 𝕏
 
+The X must be the only character on its line, or part of a CTCP ACTION (`/me`)
+exactly matching the pattern `presse[ds] X`.
+
 ## Credits
 
 This is a continuation of [ActionSack's `sopel-doubts`][asak-doubts-source],
 which has been marked as archived and no longer maintained. It maintains the
 same license and authorship credits as the original.
 
-The new maintainer (dgw) has only made minor updates to documentation and
-package metadata, including changing the "maintainer" field to reflect
-upstream's archival status.
+CTCP ACTION support is new to this fork.
 
 [//]: # (asak-doubts-source is also used in the NEWS file appended for PyPI)
 [asak-doubts-source]: https://git.actionsack.com/xnaas-archived/sopel-doubts
